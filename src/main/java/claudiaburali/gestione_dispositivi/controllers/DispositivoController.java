@@ -40,7 +40,7 @@ public class DispositivoController {
     }
 
     @PutMapping("/{dispositivoId}")
-    public Dispositivo findByIdAndUpdate(@PathVariable UUID dispositivoId, @RequestBody Dispositivo body, @PathVariable UUID dipendenteId) {
+    public Dispositivo findByIdAndUpdate(@PathVariable UUID dispositivoId, @RequestBody Dispositivo body, @RequestParam UUID dipendenteId) {
         return this.dispositivoService.findByIdAndUpdate(dispositivoId, body, dipendenteId);
     }
 
