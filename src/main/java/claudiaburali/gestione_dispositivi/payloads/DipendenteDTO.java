@@ -14,7 +14,7 @@ public record DipendenteDTO(
         @NotEmpty(message = "Il cognome è un campo obbligatorio!")
         @Size(min = 3, max = 40, message = "Il cognome deve essere compreso tra i 3 ed i 40 caratteri!")
         String surname,
-        @Email(message="Indirizzo non valido.")
+        @Email(message = "Indirizzo non valido.")
         String email
 ) {
 }

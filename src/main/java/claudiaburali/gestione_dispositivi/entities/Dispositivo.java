@@ -27,9 +27,8 @@ public class Dispositivo {
     @JoinColumn (name = "dipendente_id")
     private Dipendente dipendente;
 
-    public Dispositivo(TipoDispositivo tipoDispositivo, StatoDispositivo statoDispositivo, Dipendente dipendente) {
+    public Dispositivo(TipoDispositivo tipoDispositivo, StatoDispositivo statoDispositivo) {
         this.tipoDispositivo = tipoDispositivo;
         this.statoDispositivo = statoDispositivo;
-        this.dipendente = dipendente;
     }
 }
